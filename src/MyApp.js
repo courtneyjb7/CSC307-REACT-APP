@@ -12,7 +12,7 @@ function MyApp() {
     const updated = characters.filter((character, i) => {
       return i !== index
     });
-    deleteUser(user.id).then( result => {
+    deleteUser(user._id).then( result => {
       if (result && result.status === 204)
         setCharacters(updated);
     });
